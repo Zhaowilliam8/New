@@ -1,0 +1,40 @@
+       /* --- 4. Hero 区域 (视觉张力增强) --- */        .hero-section { background: linear-gradient(135deg, #f0f2ff 0%, #ffffff 100%); padding:40px 0; }        .hero-grid { display: grid; gap: 80px; align-items: center; }        @media (min-width: 768px) { .hero-grid { grid-template-columns: 1.1fr 0.9fr; } } /* 调整比例，文字区域更宽 */                .hero-title {     font-size: 2rem;    font-weight: bold;    color: #2d324a;    line-height: 60px;    margin-bottom: 30px;}        .hero-title span { color: #7c89d7; }        .hero-desc { font-size: 18px; color: #6b7280; margin-bottom: 48px; line-height: 1.8; max-width: 560px; }                .search-box {width: 40%;}        .search-tag {padding: 12px 24px;    color: #ffffff;    font-weight: bold;    font-size: 16px;    white-space: nowrap;    text-align: center;    letter-spacing: 2px;    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(124 137 215));}        .search-input { outline: none; border: none; font-size: 15px; flex: 1; background: transparent; }        .search-btn { background: #7c89d7; color: #ffffff; padding: 16px; border-radius: 8px; border: none; cursor: pointer; transition: 0.3s; }        .search-btn:hover { background: #6b78c5; }        .hero-img-wrapper { display: none; position: relative; }        @media (min-width: 768px) { .hero-img-wrapper { display: block; } }        .hero-img { width: 100%; height: 500px; border-radius: 16px; overflow: hidden;}        .hero-img img { width: 100%; height: 100%; object-fit: cover; }        /* --- 5. 技师与服务列表 --- */        .section-padding { padding: 100px 0; }        .section-title-group { margin-bottom: 40px; }        .section-h3 { font-size: 30px; font-weight: bold; color: #2d324a; margin-bottom: 8px; letter-spacing: -0.5px; }        .section-subtitle { color: #9ca3af; font-size: 13px; }        .therapist-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }        @media (min-width: 640px) { .therapist-grid { grid-template-columns: repeat(4, 1fr); } }        @media (min-width: 1024px) { .therapist-grid { grid-template-columns: repeat(8, 1fr); } }                .card { background: #ffffff; border-radius: 12px; border: 1px solid rgba(0,0,0,0.03); padding: 10px; transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); box-shadow: 0 4px 15px rgba(0,0,0,0.02); }        .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(124, 137, 215, 0.15); border-color: rgba(124, 137, 215, 0.2); }                .img-zoom { border-radius: 8px; overflow: hidden; aspect-ratio: 1/1; background: #f3f4f6; margin-bottom: 12px; }        .img-zoom img { transition: transform 0.6s ease; width: 100%; height: 100%; object-fit: cover; }        .card:hover .img-zoom img { transform: scale(1.1); }        .service-grid { display: grid; gap: 32px; }        @media (min-width: 640px) { .service-grid { grid-template-columns: repeat(2, 1fr); } }        @media (min-width: 1024px) { .service-grid { grid-template-columns: repeat(4, 1fr); } }                .service-card { padding: 20px; display: flex; flex-direction: column; height: 100%; }        .service-info { flex: 1; display: flex; flex-direction: column; }        .price-tag { display: flex; align-items: baseline; gap: 2px; color: #ef4444; font-weight: 900; }        .price-unit { font-size: 14px; }        .price-val { font-size: 24px; }        /* --- 6. 关于我们 & 侧边栏 --- */        .guarantee-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }        @media (max-width: 480px) { .guarantee-grid { grid-template-columns: 1fr; } }                .guarantee-item { background: #f7f8ff; padding: 20px; border-radius: 10px; display: flex; align-items: center; gap: 20px; transition: 0.3s; }        .guarantee-item:hover { background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }        .icon-box { width: 56px; height: 56px; background: #f0f2ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #7c89d7; transition: 0.3s; flex-shrink: 0; }        .guarantee-item:hover .icon-box { background: #7c89d7; color: #ffffff; }        .sidebar { position: fixed; right: 30px; bottom: 5%; z-index: 60; display: flex; flex-direction: column; gap: 16px; }        .sidebar-item { position: relative; display: flex; align-items: center; justify-content: flex-end; }        .sidebar-btn { width: 52px; height: 52px; background: #ffffff; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #7c89d7; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: none; cursor: pointer; transition: all 0.3s; }        .sidebar-btn:hover { background: #7c89d7; color: #ffffff; transform: scale(1.1); }                .sidebar-tips {             position: absolute; right: 100%; opacity: 0; visibility: hidden;             transform: translateX(20px); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);             z-index: 70; margin-right: 15px;        }        .sidebar-item:hover .sidebar-tips { opacity: 1; visibility: visible; transform: translateX(0); }		.service-contact-box span{display:block;text-align:center;font-size:13px;color:#4b5563;margin-bottom:10px;}		.service-contact-box span i{margin-right:8px;font-size:12px;}		.service-contact-box p{text-align:center;}		.ft_new{width:100%;display:flex !important;}		.ft_new .news-item{width:50%;}
+
+
+       .lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 4px;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+}
+
+.lang-btn img {
+    display: block;
+    height: 18px;
+    width: auto;
+    cursor: pointer;
+}
+
+.lang-btn:hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.lang-btn.active {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.lang-separator {
+    color: #999;
+    font-size: 14px;
+}
